@@ -1,5 +1,5 @@
 "use client";
-import Styles from "./game.module.css";
+import Styles from "./Game.module.css";
 import { Preloader } from "@/app/components/Preloader/Preloader";
 import { useState, useEffect } from "react";
 import { endpoints } from "../../api/config";
