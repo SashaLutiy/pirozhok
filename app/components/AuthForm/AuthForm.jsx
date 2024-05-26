@@ -23,7 +23,7 @@ const handleSubmit = async (e) => {
 e.preventDefault();
 const userData = await authorize(endpoints.auth, authData);
 if (isResponseOk(userData)) {
-  authContext.login({...userData, id: userData._id}, userData.jwt);
+  store.login({...userData, id: userData._id}, userData.jwt);
   setMessage({ status: "success", text: "Вы авторизовались!" });
 } else {
   setMessage({ status: "error", text: "Неверные почта или пароль" });
