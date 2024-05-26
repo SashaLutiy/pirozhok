@@ -30,6 +30,7 @@ if (isResponseOk(userData)) {
 }
 }; 
 
+
 useEffect(() => {
   let timer; 
   if (store.user) {
